@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>Curriculum</title>
+    </head>
+    <body>
+        <h1>
+            Curriculum Vitae
+        </h1>
+        <fieldset>
+            <legend>Personal data</legend>
+            <section>
+                <label for="DUI">DUI: </label>
+                <input type="text" name="DUI" pattern="[0-9]{8}-[0-9]{1}" required placeholder="12345678-9" title="se requiere un formato de DUI valido">
+
+                <label for="name">First Name: </label>
+                <input type="text" name="name"  pattern="[A-Z][a-z]{3,} [A-Z]{a-z]{3,}" required="" title="Se requiere de los dos nombres">
+
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" pattern="[A-Z][a-z]{3,} [A-Z]{a-z]{3,}" required="" title="se requiere de dos apellidos">
+
+
+                <label for="gender">Gender  </label>
+                <input type="radio" name="gender">M
+                <input type="radio" name="gender">F <br>
+                
+                <label for="ContactNumber">Contact Number: </label>
+                <input type="text" name="ContactNumber" pattern="[0-9]{4}-[0-9]{4}" placeholder="7777-7777" required title="se requiere de un numreo en formato ####-####"> 
+
+                <label for="BirtDate">Birt Date: </label>
+                <input type="date" name="BirtDate" 
+                required min="2000-01-01" max="2018-12-01" title="fecha valida desde el 01 de enero de 2000 al 31 de diciembre de 2018">
+
+                <label for="CivilStatus">Civil Status </label>
+                <select>
+                    <option>Single</option>
+                    <option>Married</option>
+                </select>
+
+                <label for="image">image </label>
+                <input type="file" name="image" accept=".png, .jpg, .jpeg">
+            </section>
+        </fieldset>
+        <br><br>
+
+
+        <fieldset>
+            <legend>Work Experience</legend>
+            <section>
+                <textarea rows="10" cols="150" required>Experience</textarea>
+            </section>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Academy Trining</legend>
+            <section>
+                <textarea rows="10" cols="150" required>Academy Trining</textarea>
+            </section>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Further Trining</legend>
+            <section>
+                    <fieldset>
+                        <legend>Programing Languajes</legend>
+                        <section>
+                            <input type="checkbox">Java
+                            <input type="checkbox">C#
+                            <input type="checkbox">C++
+                            <input type="checkbox">Ruby
+                        </section>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Web Technologies</legend>
+                        <section>
+                            <input type="checkbox">HTML5
+                            <input type="checkbox">CSS/CSS3
+                            <input type="checkbox">materialize Css
+                            <input type="checkbox">Javascript
+                            <input type="checkbox">Node.js
+                            <input type="checkbox">Sprint MVC
+                        </section>
+                    </fieldset>
+                
+            </section>
+        </fieldset>
+
+
+
+        <section>
+            <button>send</button>
+            <button>cancel</button>
+        </section>
+
+
+
+    </body>
